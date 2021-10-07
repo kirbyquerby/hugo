@@ -21,7 +21,7 @@ import (
 
 func main() {
 	resp := commands.Execute(os.Args[1:])
-
+	// dummy change
 	if resp.Err != nil {
 		if resp.IsUserError() {
 			resp.Cmd.Println("")
